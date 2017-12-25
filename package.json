@@ -1,0 +1,34 @@
+{
+  "name": "wordpress-theme",
+  "version": "1.0.0",
+  "url": "https://www.muon.no",
+  "description": "",
+  "tags": [],
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "browser-sync": "^2.21.0",
+    "css-mqpacker": "^6.0.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "postcss-assets": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node build-project.js",
+    "dev": "gulp watch"
+  },
+  "author": "",
+  "authorUrl": "",
+  "license": "ISC"
+}
