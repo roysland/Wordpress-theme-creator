@@ -51,4 +51,4 @@ function createRequiredFiles () {
 }
 
 createDirectories()
-createRequiredFiles()
+// createRequiredFiles()
