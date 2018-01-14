@@ -1,0 +1,25 @@
+button, .button {
+  -webkit-appearance: none;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 120px;
+  background: transparent;
+  box-sizing: border-box;
+  font-family: $font-family;
+  &:active {
+    opacity: 0.5;
+  }
+  &:disabled {
+    opacity: 0.8;
+    background: rgba(0,0,0,0.05);
+    cursor: not-allowed;
+  }
+}

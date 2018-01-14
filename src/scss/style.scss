@@ -1,0 +1,31 @@
+/*
+Theme Name: Oxygen Theme
+Theme URI: https://www.muon.no/products/muon-theme
+Author: Øyvind Røysland
+Author URI: https://www.muon.no
+Description: Muon theme  
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: start
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, blog, news, translation-ready
+*/
+@import "fonts/fonts";
+@import 'core/variables';
+@import 'core/base';
+@import 'core/typography';
+
+@import "elements/button";
+@import "elements/card";
+@import "elements/header";
+@import 'components/navbar';
+@import 'components/hamburger';
+@import 'components/gallery';
+@import 'components/tabs';
+
+@import 'components/marquee';
+
+@import 'components/hero';
+@import 'components/small-tabs';
+
+@import 'elements/form';

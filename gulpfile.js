@@ -15,7 +15,7 @@ const fs = require('fs')
 let browsersync = false
 
 // Define theme location
-let themeDir = 'g:/xampp/htdocs/wordpress/wp-content/themes/' + readPackage().name + '/'
+let themeDir = 'E:/xampp/htdocs/wordpress/wp-content/themes/' + readPackage().name + '/'
 const dir = {
   src: 'src/',
   build: themeDir

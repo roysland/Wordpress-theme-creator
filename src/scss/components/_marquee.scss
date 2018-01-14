@@ -1,0 +1,68 @@
+header.marquee {
+  position: relative;
+  .marquee_content {
+    @include flexbox();
+    @include align-items(center);
+    @include flex-direction(column);
+    @include justify-content(center);
+    width: 100%;
+    will-change: opacity;
+    color: #fff;
+    h2 {
+      font-weight: 300;
+      font-size: 68.5px;
+      line-height: 1;
+      margin: 0 0 .15em;
+      text-transform: uppercase;
+      font-family: $title-font;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      letter-spacing: .01em;
+      line-height: 1.35;
+      margin: 0;
+      text-align: center;
+      max-width: 80vw;
+    }
+  }
+  
+  @include mq($from: mobile, $until: tablet) {
+    height: 192px;
+    .marquee_content {
+      padding: 50px 0;
+      h2 {
+        font-size: 42px;
+      }
+    }
+  }
+
+  @include mq($from: tablet, $until: desktop) {
+    height: 220px;
+    .marquee_content {
+      padding: 75px 0;
+      h2 {
+        font-size: 42px;
+      }
+    }
+  }
+
+  @include mq($from: desktop) {
+    height: 300px;
+    .marquee_content {
+      padding: 100px 0;
+    }
+    h2 {
+      font-size: 68.5px;
+    }
+  }
+
+
+}
+
+header.marquee.fixed {
+  opacity: 1;
+  .marquee_content {
+    position: fixed;
+  }
+}

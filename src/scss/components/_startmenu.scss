@@ -1,0 +1,295 @@
+.startmenu,
+.startmenu ul,
+.startmenu ul li,
+.startmenu ul li a,
+.startmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.startmenu:after, .startmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.startmenu #menu-button {
+  display: none;
+}
+.startmenu {
+}
+.startmenu > ul > li {
+  float: left;
+}
+.startmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+.startmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+.startmenu.align-center ul ul {
+  text-align: left;
+}
+.startmenu.align-right > ul > li {
+  float: right;
+}
+.startmenu > ul > li > a {
+  padding: 17px;
+}
+.startmenu > ul > li.has-sub > a {
+  padding-right: 30px;
+}
+.startmenu > ul > li.has-sub > a:after {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  content: '';
+}
+.startmenu > ul > li.has-sub > a:before {
+  position: absolute;
+  top: 46%;
+  right: 14px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  content: '';
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.startmenu > ul > li.has-sub:hover > a:before {
+  top: 49%;
+  height: 0;
+}
+.startmenu ul ul {
+  position: absolute;
+  left: -9999px;
+}
+.startmenu.align-right ul ul {
+  text-align: right;
+}
+.startmenu ul ul li {
+  height: 0;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.startmenu li:hover > ul {
+  left: auto;
+}
+.startmenu.align-right li:hover > ul {
+  left: auto;
+  right: 0;
+}
+.startmenu li:hover > ul > li {
+  height: 45px;
+}
+.startmenu ul ul ul {
+  margin-left: 100%;
+  top: 0;
+}
+.startmenu.align-right ul ul ul {
+  margin-left: 0;
+  margin-right: 100%;
+}
+.startmenu ul ul li a {
+  border-bottom: 1px solid;
+  padding: 11px 15px;
+  width: 170px;
+}
+.startmenu ul ul li:last-child > a,
+.startmenu ul ul li.last-item > a {
+  border-bottom: 0;
+}
+
+.startmenu ul ul li.has-sub > a:after {
+  position: absolute;
+  top: 53%;
+  right: 11px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  content: '';
+}
+.startmenu.align-right ul ul li.has-sub > a:after {
+  right: auto;
+  left: 11px;
+}
+.startmenu ul ul li.has-sub > a:before {
+  position: absolute;
+  top: 46%;
+  right: 14px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  content: '';
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.startmenu.align-right ul ul li.has-sub > a:before {
+  right: auto;
+  left: 14px;
+}
+.startmenu ul ul > li.has-sub:hover > a:before {
+  top: 49%;
+  height: 0;
+}
+.startmenu.small-screen {
+  width: 100%;
+}
+.startmenu.small-screen ul {
+  width: 100%;
+  display: none;
+}
+.startmenu.small-screen.align-center > ul {
+  text-align: left;
+}
+.startmenu.small-screen ul li {
+  width: 100%;
+  border-top: 1px solid rgba(120, 120, 120, 0.2);
+}
+.startmenu.small-screen ul ul li,
+.startmenu.small-screen li:hover > ul > li {
+  height: auto;
+}
+.startmenu.small-screen ul li a,
+.startmenu.small-screen ul ul li a {
+  width: 100%;
+  border-bottom: 0;
+}
+.startmenu.small-screen > ul > li {
+  float: none;
+}
+.startmenu.small-screen ul ul li a {
+  padding-left: 25px;
+}
+.startmenu.small-screen ul ul ul li a {
+  padding-left: 35px;
+}
+.startmenu.small-screen ul ul,
+.startmenu.small-screen ul ul ul,
+.startmenu.small-screen.align-right ul ul {
+  position: relative;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.startmenu.small-screen > ul > li.has-sub > a:after,
+.startmenu.small-screen > ul > li.has-sub > a:before,
+.startmenu.small-screen ul ul > li.has-sub > a:after,
+.startmenu.small-screen ul ul > li.has-sub > a:before {
+  display: none;
+}
+.startmenu.small-screen #menu-button {
+  display: block;
+  padding: 17px;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.startmenu.small-screen #menu-button:after {
+  position: absolute;
+  top: 22px;
+  right: 17px;
+  display: block;
+  height: 4px;
+  width: 20px;
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  content: '';
+}
+.startmenu.small-screen #menu-button:before {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  display: block;
+  height: 2px;
+  width: 20px;
+  content: '';
+}
+.startmenu.small-screen #menu-button.menu-opened:after {
+  top: 23px;
+  border: 0;
+  height: 2px;
+  width: 15px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.startmenu.small-screen #menu-button.menu-opened:before {
+  top: 23px;
+  width: 15px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.startmenu.small-screen .submenu-button {
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+}
+.startmenu.small-screen ul ul .submenu-button {
+  height: 34px;
+  width: 34px;
+}
+.startmenu.small-screen .submenu-button:after {
+  position: absolute;
+  top: 22px;
+  right: 19px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  content: '';
+}
+.startmenu.small-screen ul ul .submenu-button:after {
+  top: 15px;
+  right: 13px;
+}
+.startmenu.small-screen .submenu-button:before {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  content: '';
+}
+.startmenu.small-screen ul ul .submenu-button:before {
+  top: 12px;
+  right: 16px;
+}
+.startmenu.small-screen .submenu-button.submenu-opened:before {
+  display: none;
+}
+.startmenu.small-screen.select-list {
+  padding: 5px;
+}

@@ -1,0 +1,35 @@
+$stop1: rgb(87,66,213);
+$stop2: rgb(241,60,60);
+
+* {
+  box-sizing: inherit;
+  text-rendering: geometricPrecision;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-family;
+  position: relative;
+  background: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#app {
+  position: relative;
+  padding-top: 56px;
+}
+#app > .container {
+  margin: 0 auto;
+  padding: 0 3%;
+  position: relative;
+  z-index: 2;
+}
+
+body.white:before {
+  display: none;
+}
